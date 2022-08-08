@@ -1,0 +1,23 @@
+docker_build(
+  'hello-world', 
+  '.',
+  live_update = [
+    sync('./index.html', '/usr/share/nginx/html/index.html'),
+    ],
+  ignore = [
+    'README.md',
+    'app.yaml'
+  ]
+)
+
+load('ext://namespace', 'namespace_create')
+namespace_create('dev')
+
+load('ext://deployment', 'deployment_create')
+deployment_create(
+  'hello-world',
+  namespace='dev',
+  ports='80'
+)
+
+k8s_resource('hello-world', port_forwards='9980:80')
