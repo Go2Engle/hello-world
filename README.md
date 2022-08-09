@@ -16,7 +16,7 @@ This repository also contains a VScode devcontainer configuration that comes wit
 Clone the repository locally to your PC and run the below command
 
 ```
-helm install hello-world .\hello-world-chart\
+helm install hello-world .\charts\hello-world-chart\
 ```
 
 > **Note** 
