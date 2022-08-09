@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  hello-world:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2022-08-09T10:59:46.473555442Z"
+    description: A Helm chart for hello-world
+    digest: da4b7ae17a50a207be9bc6da99bcb521b4a1b4230f8398ee303b3e6154d38590
+    name: hello-world
+    type: application
+    urls:
+    - https://github.com/Go2Engle/hello-world/releases/download/hello-world-0.1.5/hello-world-0.1.5.tgz
+    version: 0.1.5
+generated: "2022-08-09T10:59:46.473569142Z"
