@@ -16,14 +16,14 @@ This repository also contains a VScode devcontainer configuration that comes wit
 Clone the repository locally to your PC and run the below command
 
 ```
-helm install hello-world .\charts\hello-world-chart\
+helm install hello-world .\charts\hello-world\
 ```
 
 Install from repo
 ```
 helm repo add go2engle https://go2engle.com/hello-world
 helm repo update
-helm install hello-world go2engle/hello-world-chart
+helm install hello-world go2engle/hello-world
 ```
 
 > **Note** 
