@@ -1,5 +1,7 @@
 .github
 .git
 .devcontainer
+charts
+renovate.json
 tiltfile
 README.md
