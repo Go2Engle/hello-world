@@ -19,5 +19,12 @@ Clone the repository locally to your PC and run the below command
 helm install hello-world .\charts\hello-world-chart\
 ```
 
+Install from repo
+```
+helm repo add go2engle https://go2engle.com/hello-world
+helm repo update
+helm install hello-world go2engle/hello-world-chart
+```
+
 > **Note** 
 > To deploy into a specific namespace add `--namespace <name>` to the command above
