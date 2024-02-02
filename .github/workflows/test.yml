@@ -1,0 +1,26 @@
+name: Test Workflow
+
+on:
+  workflow_dispatch:
+    inputs:
+      input1:
+        description: 'Input 1'
+        required: true
+        type: string
+      input2:
+        description: 'Input 2'
+        required: true
+        type: string
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Echo Inputs
+        run: |
+          echo "Input 1: ${{ github.event.inputs.input1 }}"
+          echo "Input 2: ${{ github.event.inputs.input2 }}"
